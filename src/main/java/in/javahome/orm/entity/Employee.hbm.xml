@@ -14,7 +14,7 @@
         <property name="mailId" type="java.lang.String">
             <column name="MAILID" />
         </property>
-        <many-to-one name="passport">
+        <many-to-one name="passport" cascade="save-update,delete">
         <!-- unique=true makes this relationship one-to-one -->
           <column name="passport_id" unique="true"/>
         </many-to-one>

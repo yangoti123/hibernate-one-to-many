@@ -9,6 +9,14 @@ public class Employee implements Serializable{
 	private String empName;
 	private String mailId;
 	private Set<Address> address = new HashSet<Address>();
+	private Passport passport;
+	
+	public Passport getPassport() {
+		return passport;
+	}
+	public void setPassport(Passport passport) {
+		this.passport = passport;
+	}
 	public int getEmpId() {
 		return empId;
 	}

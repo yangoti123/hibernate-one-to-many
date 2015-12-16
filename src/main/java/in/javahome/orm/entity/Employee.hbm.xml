@@ -14,6 +14,10 @@
         <property name="mailId" type="java.lang.String">
             <column name="MAILID" />
         </property>
+        <many-to-one name="passport">
+        <!-- unique=true makes this relationship one-to-one -->
+          <column name="passport_id" unique="true"/>
+        </many-to-one>
         <set name="address" table="ADDRESS">
             <key>
             <!-- This column belongs to ADDRESS table -->

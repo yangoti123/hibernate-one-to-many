@@ -18,7 +18,7 @@
         <!-- unique=true makes this relationship one-to-one -->
           <column name="passport_id" unique="true"/>
         </many-to-one>
-        <set name="address" table="ADDRESS">
+        <set name="address" table="ADDRESS" batch-size="10">
             <key>
             <!-- This column belongs to ADDRESS table -->
                 <column name="EMP_ID" />

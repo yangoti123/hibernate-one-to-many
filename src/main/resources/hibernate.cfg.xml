@@ -17,5 +17,6 @@
           <mapping resource="in/javahome/orm/entity/Student.hbm.xml"/>
          <mapping resource="in/javahome/orm/entity/Course.hbm.xml"/>
          <mapping resource="in/javahome/orm/entity/Passport.hbm.xml"/>
+         <mapping resource="in/javahome/orm/entity/Product.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>

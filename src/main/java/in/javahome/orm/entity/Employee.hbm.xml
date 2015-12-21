@@ -27,4 +27,5 @@
             <one-to-many class="in.javahome.orm.entity.Address" />
         </set>
     </class>
+    <query name="selectAllEmp">from Employee where empId=:id OR empName=:name</query>
 </hibernate-mapping>

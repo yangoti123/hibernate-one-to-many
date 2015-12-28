@@ -11,6 +11,11 @@
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
         <property name="hbm2ddl.auto">update</property>
         <property name="show_sql">true</property>
+        <!-- Second level cache -->
+        <property name="hibernate.cache.use_second_level_cache">true</property>
+        <property name="hibernate.cache.provider_class">net.sf.ehcache.hibernate.EhCacheProvider</property>
+        <!-- Query Cache -->
+        <property name="hibernate.cache.use_query_cache">true</property>
         <mapping resource="in/javahome/orm/entity/Employee.hbm.xml"/>
          <mapping resource="in/javahome/orm/entity/Address.hbm.xml"/>
          
@@ -18,5 +23,6 @@
          <mapping resource="in/javahome/orm/entity/Course.hbm.xml"/>
          <mapping resource="in/javahome/orm/entity/Passport.hbm.xml"/>
          <mapping resource="in/javahome/orm/entity/Product.hbm.xml"/>
+         <mapping resource="in/javahome/orm/inheritance/entity/Payment.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>
